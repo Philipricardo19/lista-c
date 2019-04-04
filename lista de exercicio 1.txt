@@ -1,0 +1,91 @@
+// Exercício 2, PDF Exercícios de continuação.
+/ * 2. Desenvolva um algoritmo em C que recebe 2 (dois) números inteiros (um positivo outro
+negativo) pelo usuário e através de 3 (três) mensagens em tela devem exibir o retorno
+de três funções onde uma primeira vez recebe a informação do dobro de cada segunda
+oaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+O retorno da tela se o resultado da multiplicação foi iniciado pela anterior
+(quando o resultado> 1) ou negativo (quando o resultado <1). Após compilar e executar tudo ok
+, transcreva o algoritmo para o espaço abaixo.
+* /
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+#include <math.h>
+
+int verificacao1 (int x, int y) {
+		 
+		 printf ("A primeira vez que fala o dobro de entradas. \ n");
+		 printf ("Os novos valores serão% de% d \ n \ n", (2 * x), (2 * y));
+		 
+	return 0;
+}
+int verificacao2 (int x, int y) {
+		 
+		 printf ("A segunda etiqueta retorna o produto entre as entradas. \ n");
+		 printf ("O poduto entre% de% é% d \ n \ n", x, y, (x * y));
+	return 0;
+}
+int verificacao3 (int a) {
+		 
+		 printf ("A terceira interação analisa o produ tion by a interacion, and presents the usual se the value for positive or negative. \ n");
+		 if (a> 0)
+		 printf ("POSITIVO \ n");
+		 outro 
+		 	printf ("NEGATIVO \ n");
+	return 0;
+}
+
+
+
+	a Principal(){
+	setlocale (LC_ALL, "Português");
+	printf ("\ n \ t \ t Oi! Tudo bem? \ nO primeiro programa tem como função receber 2 números, e fazer como rotinas necessárias \ n");
+   
+   int num1, num2, i, aux = 0;	
+   printf ("\ nDigite um número: \ n");
+   scanf ("% d", & num1);
+   while (num1 == 0) {
+   		sistema ("cls");
+   		printf ("\ nDigite um número: \ n");
+   		scanf ("% d", & num1);
+   }
+   getchar ();
+   if (num1> 0) {
+   		printf ("\ nDigite o outro número:");
+   		scanf ("% d", & num2);
+   			 while (num2> = 0) {
+		sistema ("cls");
+		se (i> = 10) {
+   			printf ("\ nO número tem que ser negativo, pois já foi computado um valor positivo \ n");
+		   }
+   		printf ("\ nDigite o outro número: \ n");
+   		scanf ("% d", & num2);
+   		i = 1 + i;
+		   }
+   	}
+
+   if (num1 <0) {
+   		printf ("\ nDigite o outro número:");
+   		scanf ("% d", & num2);
+   			 while (num2 <= 0) {
+		sistema ("cls");
+		se (i> = 10) {
+   			printf ("\ nO número tem que ser positivo, pois já foi computado um valor negativo \ n");
+		   }
+   		printf ("\ nDigite o outro número: \ n");
+   		scanf ("% d", & num2);
+   		i = i + 1;
+   }
+   
+   }
+	verificacao1 (num1, num2);
+	sistema ("pausa");
+	sistema ("cls");
+	aux = verificacao2 (num1, num2);
+	sistema ("pausa");
+	sistema ("cls");
+	verificacao3 (aux);
+	sistema ("pausa");
+	sistema ("pausa");
+}

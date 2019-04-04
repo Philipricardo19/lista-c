@@ -1,0 +1,56 @@
+// Exercício 2, PDF da aula 2 (funções) Converter minutos em segundos e segunndos em horas, com uma ordem de entrada.
+#include <stdio.h>
+#include <stdlib.h>
+#include <conio.h>
+#include <locale.h>
+
+float minuto_segundo (float min) {
+    min = min * 60;
+    return min;
+    
+}
+
+float segundo_hora (float seg) {
+	resultado flutuante;
+    resultado = seg / 3600;
+    resultado de retorno;
+}
+int main ()
+{
+	setlocale (LC_ALL, "Português");
+    int op;
+    float minutos, segundos;
+    
+    printf ("Digite o número que corresponde a uma função: \ n" (1) -Transformar minúsculos em segundos \ n \ t (2) - Segundos em horas \ n \ t> ");
+    scanf ("% d", & op);
+    sistema ("cls");
+    getchar ();
+// system ("pause");
+    
+        while (op! = 1 && op! = 2) {
+        sistema ("cls");
+        printf ("Digite o número que corresponde a uma função: \ n" (1) -Transformar minúsculos em segundos \ n \ t (2) - Segundos em horas \ n \ t> ");
+        scanf ("% d", & op);    
+          
+        }
+            if (op == 1) {
+                printf ("Digite uma quantidade de minutos a ser convertidos>");
+                scanf ("% f", & minutos);
+                printf ("\ n");
+                minutos = minuto_segundo (minutos);
+                printf ("O valor digitado corresponde a% .3f segundos", minutos);
+                sistema ("pausa");
+            }
+            
+        if (op == 2) {
+                printf ("Digite uma quantidade de segundos a ser convertidos>");
+                scanf ("% f", & segundos);
+                printf ("\ n");
+                segundos = segundo_hora (segundos);
+                printf ("O valor digitado corresponde a% .6f horas", segundos);
+                sistema ("pausa");
+            }   
+            
+
+    return 0;
+}

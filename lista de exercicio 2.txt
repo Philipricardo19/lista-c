@@ -1,0 +1,48 @@
+// Exercício 2, PDF Exercícios de continuação.
+/ * 3. Escreva um algoritmo para ser possível ao usuário escolher uma dimensão de
+uma estrutura / matriz (onde o usuário define uma quantidade de linhas e
+Escolhemos a matriz em tela, transcrevemos o algoritmo para o espaço abaixo. 
+* /
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+#include <math.h>
+
+
+	a Principal(){
+		int i, j, a, b;
+		
+	printf ("\ nEscolha o número de linhas da matriz \ n:");
+	scanf ("% d", & a);
+	printf ("\ nEscolha o número de enunciados da matriz \ n:"); 
+	scanf ("% d", & b);
+	
+	int matriz [a] [b];
+	// inscreva-se em Matriz
+	para (i = 1; i <= a; i ++) {
+		printf ("\ n");
+		para (j = 1; j <= b; j ++) {
+			printf ("M (% d,% d) \ t", i, j);
+		}
+	}
+	sistema ("cls");
+	// embarcando matriz
+			para (i = 1; i <= a; i ++) {
+				sistema ("cls");
+					para (j = 1; j <= b; j ++) {
+						printf ("Digite um valor para o elemento M (% d,% d) da matriz \ n", i, j);
+						scanf ("% d" e matriz [i] [j]); }
+								}
+	// gerar matriz montada	
+			para (i = 1; i <= a; i ++) {
+				printf ("\ n");
+					para (j = 1; j <= b; j ++) {
+						printf ("% d \ t", matriz [i] [j]);
+										}
+							}	
+								
+								
+								
+	
+}

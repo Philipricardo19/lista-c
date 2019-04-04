@@ -1,0 +1,80 @@
+// Exercício 5, PDF Exercícios de continuação.
+/ * 5. Desenvolva um algoritmo em que não é um bloco principal MAIN, demonstre através de
+chamadas e funções, como mensagens em tela referente a cada operação matemática que
+o usuário escolher (adição, subtração etc). Ou seja, serão 4 funções.
+* /
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+#define TAM 5 
+
+	float soma () {
+			resultado de flutuação, a, b;
+			printf ("Para obter os dois gráficos, digite o número inicial, barra de espaço, e digite o próximo número, em seguida, tecle enter \ n");
+			printf ("Valores de Diálogo para Ser Somados \ n");
+			scanf ("% f% f", & a, & b);
+			 resultado = (a + b); 		
+
+	resultado de retorno;
+}
+	float subtracao () {
+			resultado de flutuação, a, b;
+			printf ("Para obter os dois gráficos, digite o número inicial, barra de espaço, e digite o próximo número, em seguida, tecle enter \ n");
+			printf ("Valores de Diálogo para serem subtraídos \ n");
+			scanf ("% f% f", & a, & b);
+			 resultado = (ab); 		
+
+	resultado de retorno;
+	}	
+	float multiplicacao () {
+			resultado de flutuação, a, b;
+			printf ("Para obter os dois gráficos, digite o número inicial, barra de espaço, e digite o próximo número, em seguida, tecle enter \ n");
+			printf ("Valores de DIgite para se multiplicados \ n");
+			scanf ("% f% f", & a, & b);
+			 resultado = (a * b); 		
+
+	resultado de retorno;
+	}
+	float divisao () {
+			resultado de flutuação, a, b;
+			printf ("Para obter os dois gráficos, digite o número inicial, barra de espaço, e digite o próximo número, em seguida, tecle enter \ n");
+			printf ("Digitar os valores para serem divididos \ n");
+			scanf ("% f% f", & a, & b);
+			 resultado = (a / b); 		
+
+	resultado de retorno;
+	}
+	
+
+	a Principal(){
+		
+	setlocale (LC_ALL, "Português");
+		int op;
+		float num;
+	printf ("\ n \ n5. Envolva um algoritmo no bloco principal, demonstre através de chamadas e funções, como as mensagens em tela pagam para cada operação, que o usuário escolha (adição, subtração etc). Ou seja, serão 4 funções. \ n \ n ");
+	getchar ();
+	sistema ("cls");
+	
+		printf ("Escolha uma operação: \ n \ t1-Soma \ n \ t2-Subtração \ n \ t3-Multiplicação \ n \ t4-Divisão \ n \ n->");
+		scanf ("% d", & op);
+		
+		while (op <= 0 || op> 4) {
+			sistema ("cls");
+			printf ("Escolha uma operação: \ n \ t1-Soma \ n \ t2-Subtração \ n \ t3-Multiplicação \ n \ t4-Divisão \ n \ n->");
+			scanf ("% d", & op);
+			printf ("\ n");
+		}
+		
+			if (op == 1) {
+				num = soma ();
+			} else if (op == 2) {
+				num = subtração ();
+			} else if (op == 3) {
+				num = multiplicacao (); 
+			} else if (op == 4) {
+				num = divisao ();
+			}	
+		printf ("O valor da operação é% .2f \ n \ n", num);
+		sistema ("pausa");			
+	}
